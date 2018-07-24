@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <!-- *****************Title Block***************** -->
+  <title>
+    {% block title %} {% endblock %}
+  </title>
+
+  <!-- *****************CSS***************** -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+</head>
+
+<!-- layout -->
+<body class="Site">
+  <!--Navbar :: Header-->
+  {% include 'includes/_navbar.html' %}
+
+  <!--Body -->
+  <main class="Site-content">
+    {% block body %} {% endblock %}
+  </main>
+  <!--Footer-->
+  {% include 'includes/_footer.html' %}
+</body>
+
+</html>

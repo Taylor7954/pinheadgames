@@ -1,0 +1,28 @@
+<div id="navbar">
+  <div id="navbar-top" class="topnav">
+    <a target="_blank" href="#" class="navbar-logo" rel="nofollow">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Who You Calling Pinhead">
+      </a>
+    <div id="profile-content" style="display: block;">
+        <form id="login-group" action="#" method="post">
+        <input type="hidden" name="act" value="login" id="act">
+        <a href="#" tabindex="4" class="create-account">Register</a>
+        <button tabindex="3" type="submit" class="login"><i class="fa fa-user" style="font-size:12px;"></i>Login</button>
+        <input tabindex="2" type="password" name="password" id="password-input" class="login" placeholder="Password">
+        <input tabindex="1" type="text" class="login" name="username" id="username-input" placeholder="Username">
+      </form>
+    </div>
+  </div>
+  <div id="navbar-bot" class="botnav">
+    <a href="#home"><i class="fa fa-home" style="font-size:24px;"></i></a>
+    <a href="#news">NEWS</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#" class="login">LOGIN</a>
+    <a href="#" class="register">REGISTER</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+</div>
+
+<script type="text/javascript" src="{{url_for('static', filename='js/navbar.js')}}"></script>
